@@ -119,7 +119,17 @@ nameTitle.innerText = edoMagro.nome;
 
 cardTextDiv.appendChild(nameTitle);
 
-cardTextDiv.innerText = edoMagro.nome;
+//         - RUOLO
+
+//creo un paragrafo in cui inserirò il Ruolo del membro
+
+const workCardText = document.createElement('p');
+
+workCardText.innerText = edoMagro.ruolo; 
+
+// aggiungo il paragrafo al div del testo della card
+
+cardTextDiv.appendChild(workCardText);
 
 
 
