@@ -67,6 +67,8 @@ const darioMoccia = teamMembers[3];
 
 // creo un div dove inserire la card
 
+
+// **************************     IMMAGINE      **************************
 const teamCardDiv = document.createElement('div');
 
 teamCardDiv.classList.add('team-card');
@@ -93,3 +95,32 @@ imageElement.src = edoMagro.foto;
 // aggiungo all'interno del div l'immagine che serve
 
 imageCardDiv.appendChild(imageElement);
+
+
+
+// *******************      TESTO       *******************
+
+// creo un secondo div dove inserirò il nome e il mestiere
+const cardTextDiv = document.createElement('div');
+
+console.log(cardTextDiv);
+// aggiungo la classe 
+cardTextDiv.className = 'card-text';
+
+// aggiungo questo div al container della card
+teamCardDiv.appendChild(cardTextDiv);
+
+//        - NOME
+
+// aggiungo un h3 in cui aggiungero il valore del nome dei membri
+const nameTitle = document.createElement('h3');
+
+nameTitle.innerText = edoMagro.nome;
+
+cardTextDiv.appendChild(nameTitle);
+
+cardTextDiv.innerText = edoMagro.nome;
+
+
+
+
