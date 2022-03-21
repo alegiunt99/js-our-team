@@ -129,11 +129,12 @@ addButton.addEventListener('click', () => {
         // aggiungo l'oggetto all'array
         teamMembers.push(memberToAdd);
 
+         // e creo la card del membro aggiunto 
+        createCard(memberToAdd);
+
     }
 
-    // e creo la card del membro aggiunto 
-    const addedMemberCard = createCard(memberToAdd);
-
+   
 })
 
 console.log(teamMembers);
