@@ -16,8 +16,7 @@ function createCard(memberObject) {
 function createCardText(teamDiv, memberValues) {
     const cardTextDiv = document.createElement('div');
 
-    console.log(cardTextDiv);
-    // aggiungo la classe 
+    // aggiungo la classe
     cardTextDiv.className = 'card-text';
 
     // aggiungo questo div al container della card
@@ -72,8 +71,6 @@ function addAPhoto(teamCardDiv, member) {
 
     // creo l'elemento dell'immagine
     const imageElement = document.createElement('img');
-
-    console.log(imageElement)
 
     imageElement.src = member.foto;
 

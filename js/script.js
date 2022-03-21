@@ -93,3 +93,47 @@ const darioMocciaCard = createCard(darioMoccia);
 const angelaLopezCard = createCard(angelaLopez);
 
 const angelaCarroCard = createCard(angelaCarrol);
+
+
+// cliccando il pulsante aggiungo i nuovi membri nell'array del team
+
+// prendo il pulsante Add
+const addButton = document.getElementById('addMemberButton');
+
+// prendo tutti gli input
+const inputName = document.getElementById('name');
+
+const inputRole = document.getElementById('role');
+
+const inputImageUrl = document.getElementById('image');
+
+//creo l'evento al click del pulsante Add
+addButton.addEventListener('click', () => {
+    
+    // creo un oggetto con i valori scritti dall'utente
+    const memberToAdd = {
+
+        nome: inputName.value,
+
+        ruolo: inputRole.value,
+
+        foto: inputImageUrl.value
+
+    }
+
+    const memberAlreadyRegistred = teamMembers.includes(memberToAdd);
+
+    // se non è registrato 
+    if (!memberAlreadyRegistred) {
+        
+        // aggiungo l'oggetto all'array
+        teamMembers.push(memberToAdd);
+
+    }
+
+    // e creo la card del membro aggiunto 
+    const addedMemberCard = createCard(memberToAdd);
+
+})
+
+console.log(teamMembers);
