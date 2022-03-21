@@ -62,57 +62,6 @@ const giammaTocco = teamMembers[2];
 
 const darioMoccia = teamMembers[3];
 
-// una volta definiti i membri all'interno dell'array,
-// usando le informazioni inserite le aggiungo all'html per creare la card
+// creo la carta di ognuno
 
-// creo un div dove inserire la card
-
-
-// **************************     IMMAGINE      **************************
-const teamCardDiv = document.createElement('div');
-
-teamCardDiv.classList.add('team-card');
-
-// lo inserisco nel container della card
-cardsContainer.appendChild(teamCardDiv);
-
-// creo dei div figli all'interno del contenitore che divide i 3 parametri
-const imageCardDiv = addAPhoto(edoMagro.foto);
-
-
-// *******************      TESTO       *******************
-
-// creo un secondo div dove inserirò il nome e il mestiere
-const cardTextDiv = document.createElement('div');
-
-console.log(cardTextDiv);
-// aggiungo la classe 
-cardTextDiv.className = 'card-text';
-
-// aggiungo questo div al container della card
-teamCardDiv.appendChild(cardTextDiv);
-
-//        - NOME
-
-// aggiungo un h3 in cui aggiungero il valore del nome dei membri
-const nameTitle = document.createElement('h3');
-
-nameTitle.innerText = edoMagro.nome;
-
-cardTextDiv.appendChild(nameTitle);
-
-//         - RUOLO
-
-//creo un paragrafo in cui inserirò il Ruolo del membro
-
-const workCardText = document.createElement('p');
-
-workCardText.innerText = edoMagro.ruolo; 
-
-// aggiungo il paragrafo al div del testo della card
-
-cardTextDiv.appendChild(workCardText);
-
-
-
-
+const edoardoMagroCard = createCard(edoMagro);
