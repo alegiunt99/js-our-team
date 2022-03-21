@@ -31,23 +31,37 @@ const teamMembers = [
     {
         nome: 'Agnese Innocenti',
         ruolo: 'impiegata',
-        foto: 'image-2'
+        foto: 'img/barbara-ramos-graphic-designer.jpg'
     },
 
     //oggetto 2
     {
         nome: 'Giammarco Tocco',
-        ruolo: 'magazziniera',
-        foto: 'image-3'
+        ruolo: 'magazziniere',
+        foto: 'img/wayne-barnett-founder-ceo.jpg'
     },
      
     //oggetto 3
     {
         nome: 'Dario Moccia',
         ruolo: 'streamer',
-        foto: 'image-4'
-    }
-     
+        foto: 'img/scott-estrada-developer.jpg'
+    },
+    
+    //oggetto 4
+
+    {
+        nome: 'Angela Lopez',
+        ruolo: 'Social Media Manager',
+        foto: 'img/angela-lopez-social-media-manager.jpg'
+    },
+
+    //oggetto 5
+    {
+        nome: 'Angela Carrol',
+        ruolo: 'Chief Manager',
+        foto: 'img/angela-caroll-chief-editor.jpg'
+    },
 ];
 
 console.log(teamMembers);
@@ -62,6 +76,20 @@ const giammaTocco = teamMembers[2];
 
 const darioMoccia = teamMembers[3];
 
+const angelaLopez = teamMembers[4];
+
+const angelaCarrol = teamMembers[5];
+
 // creo la carta di ognuno
 
 const edoardoMagroCard = createCard(edoMagro);
+
+const agneseInnoCard = createCard(agneseInno);
+
+const giammaToccoCard = createCard(giammaTocco);
+
+const darioMocciaCard = createCard(darioMoccia);
+
+const angelaLopezCard = createCard(angelaLopez);
+
+const angelaCarroCard = createCard(angelaCarrol);
