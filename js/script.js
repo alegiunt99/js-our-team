@@ -77,25 +77,7 @@ teamCardDiv.classList.add('team-card');
 cardsContainer.appendChild(teamCardDiv);
 
 // creo dei div figli all'interno del contenitore che divide i 3 parametri
-
-const imageCardDiv = document.createElement('div');
-
-  // gli aggiungo una classe chiamata 'card-image'
-imageCardDiv.className = 'card-image';
-
-teamCardDiv.appendChild(imageCardDiv);
-
-// creo l'elemento dell'immagine
-const imageElement = document.createElement('img');
-
-console.log(imageElement)
-
-imageElement.src = edoMagro.foto;
-
-// aggiungo all'interno del div l'immagine che serve
-
-imageCardDiv.appendChild(imageElement);
-
+const imageCardDiv = addAPhoto(edoMagro.foto);
 
 
 // *******************      TESTO       *******************
